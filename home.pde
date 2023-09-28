@@ -1,95 +1,106 @@
-void pontos_gerais(){
-    
-  strokeWeight(5);
- // Lado Esquerdo Esquerdo baixo
-  point(20, 880); 
-  // Lado Esquerdo Esquerdo cima 
-  point(20, 680);
- // Lado Esquerdo Direito baixo
-  point(100, 880); 
-  // Lado Esquerdo Direito cima
-  point(100, 680);
-  // Centro Esquerdo
-  point(100, 780);
-  // Centro cima 
-  point(140, 730);
-  // Centro Direito
-  point(180, 780);
-  // Lado Direito Esquerdo Baixo
-  point(180, 880);
-  // Lado Direito Direito Baixo
-  point(260, 880);
-  // Lado Direito Esquerdo cima
-  point(180, 680);
-  // Lado Direito Direito cima
-  point(260, 680);
-  // Esquerda topo
-  point(60, 600);
-  // Direita topo
-  point(220, 600);
-  }
-  void linhas_gerais(){
-   line(20,880,20,680);
-   line(20,680,100,680);
-   line(20,680,60,600);
-   line(100,680,60,600);
-   line(100,680,100,880);
-   line(100,880,20,880);
-   line(100,780,140,730);
-   line(140,730,180,780);
-   line(180,780,180,880);
-   line(180,880,180,680);
-   line(180,880,260,880);
-   line(260,880,260,680);
-   line(180,680,260,680);
-   line(220,600,180,680);
-   line(220,600,260,680);
-     }
-    void cor_gerais(){
-    // Triangulo Direito
-    fill(0, 255, 0); 
-    beginShape();
-    vertex(180, 680);
-    vertex(220, 600);
-    vertex(260, 680);
-    endShape(CLOSE);
-    // TrianguloEsquerdo
-    fill(0, 255, 0); 
-    beginShape();
-    vertex(20, 680);
-    vertex(60, 600);
-    vertex(100, 680);
-    endShape(CLOSE);
-    // Retângulo Esquerdo
-    fill(0,0,255); 
-    beginShape();
-    vertex(20, 880);
-    vertex(20, 680);
-    vertex(100, 680);
-    vertex(100, 880);
-     endShape(CLOSE);
-     
-     // Retângulo Direito
-    fill(0, 0, 255); 
-    beginShape();
-    vertex(260, 880);
-    vertex(180, 880);
-    vertex(180, 680);
-    vertex(260, 680);
-     endShape(CLOSE);
-      // Porta
-     fill(255, 255, 0);
-     beginShape();
-     vertex(100, 880);
-     vertex(100, 780);
-     vertex(140, 730);
-     vertex(180, 780);
-     vertex(180, 880);
-     endShape(CLOSE);
-    }
-    
-   void bandeira(){
-   
-   line(140,730,140,600);
-   }
-    
+class home {
+void points() {
+point(10, 700);
+point(30,700);
+point(80,700);
+point(120,700);
+point(170,700);
+point(190,700);
+point(0,400);
+point(0,430);
+point(55,400);
+point(55,430);
+point(55,460);
+point(55,500);
+point(30,500);
+point(145,460);
+point(145,500);
+point(170,500);
+point(145,400);
+point(145,430);
+point(200,400);
+point(200,430);
+}
+void lines(){
+strokeWeight(5);
+line(10,700,60,700);
+line(140,700,190,700);
+line(10,700,10,430);
+line(10,430,0,430);
+line(0,400,55,400);
+line(55,400,55,430);
+line(45,430,55,430);
+line(45,430,45,500);
+line(10,430,45,430);
+line(30,500,45,500);
+line(30,500,30,700);
+line(45,500,55,500);
+line(55,500,55,460);
+line(55,500,145,500);
+line(145,460,145,500);
+line(55,460,145,460);
+line(145,500,170,500);
+line(170,700,170,500);
+line(155,430,155,500);
+line(155,430,145,430);
+line(145,430,145,400);
+line(145,400,200,400);
+line(200,400,200,430);
+line(190,430,200,430);
+line(145,430,200,430);
+line(190,700,190,430);
+line(28,350,0,400);
+line(28,350,55,400);
+line(0,400,0,430);
+line(172,350,145,400);
+line(172,350,200,400);
+line(28,300,28,350);
+line(172,300,172,350);
+line(28,300,58,300);
+line(58,300,40,310);
+line(40,310,58,320);
+line(58,320,28,320);
+line(172,300,200,300);
+line(200,300,180,310);
+line(180,310,200,320);
+line(200,320,172,320);
+line(80,360,80,460);
+line(120,360,120,460);
+line(80,360,100,300);
+line(100,300,120,360);
+line(80,360,120,360);
+line(100,300,100,250);
+line(100,250,140,250);
+line(140,250,120,260);
+line(120,260,140,270);
+line(140,270,100,270);
+line(60,680,60,650);
+line(60, 640,60,600);
+line(60,590,70,550);
+line(80,550,120,550);
+line(140,680,140,650);
+line(140, 640,140,600);
+line(140,590,130,550);
+// yellow
+fill(255, 255, 0);
+beginShape();
+vertex(28, 350);
+vertex(0, 400);
+vertex(55, 400);
+endShape(CLOSE);
+//
+fill(255, 255, 0);
+beginShape();
+vertex(80,360);
+vertex(120,360);
+vertex(100,300);
+endShape(CLOSE);
+//
+fill(255, 255, 0);
+beginShape();
+vertex(145,400);
+vertex(200,400);
+vertex(172,350);
+endShape(CLOSE);
+}
+}

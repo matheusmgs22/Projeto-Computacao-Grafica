@@ -1,99 +1,97 @@
 void pontos(){
-  // Cabeça
-  point(320, 120);
-  point(540, 120);
-  point(540, 320);
-  point(320, 320);
- 
-  // Cabelo
-  point(320, 80);
-  point(540, 80);
-  point(540, 120);
-  point(320, 120);
- 
-  // Boca
-  point(410, 270);
-  point(455, 270);
-  point(455, 280);
-  point(410, 280);
+  // Cabeça   
+  point(155, 555);
+  point(195, 555);
+  point(195, 595);
+  point(155, 595);
 
-  // Olho esquerdo
-  point(370, 180);
-  point(395, 180);
-  point(395, 205);
-  point(370, 205);
+  // Cabelo  
+  point(155, 555);
+  point(195, 555);
+  point(195, 565);
+  point(155, 565);
 
-  // Íris esquerda
-  point(395, 180);
-  point(420, 180);
-  point(420, 205);
-  point(395, 205);
+  // Olho esquerdo   
+  point(159, 569);
+  point(165, 569);
+  point(165, 576);
+  point(159, 576);
 
-  // Olho direito
-  point(460, 180);
-  point(485, 180);
-  point(485, 205);
-  point(460, 205);
+  // Íris esquerda   
+  point(165, 569);
+  point(171, 569);
+  point(171, 576);
+  point(165, 576);
 
-  // Íris direita
-  point(485, 180);
-  point(510, 180);
-  point(510, 205);
-  point(485, 205);
- 
-  // Torso
-  point(320, 320);
-  point(540, 320);
-  point(540, 580);
-  point(320, 580);
- 
-  // pernas
-  point(320, 580);
-  point(540, 580);
-  point(540, 800);
-  point(320, 800);
- 
-  //sapatos
-  point(320, 800);
-  point(540, 800);
-  point(540, 850);
-  point(320, 850);
- 
-  // meio perna
-  point(430, 650);
-  point(430, 850);
- 
-  // Braço esquerdo
-  point(250, 320);
-  point(320, 320);
- 
-  point(320, 580);
-  point(250, 580);
+  // Olho direito  
+  point(179, 569);
+  point(185, 569);
+  point(185, 576);
+  point(179, 576);
 
-  // Braço direito
-  point(540, 320);
-  point(610, 320);
- 
-  point(610, 580);
-  point(540, 580);
- 
-  // manga esquerda
-  point(250, 320);
-  point(320, 320);
- 
-  point(320, 400);
-  point(250, 400);
- 
-  // manga direita
-  point(540, 320);
-  point(610, 320);
- 
-  point(610, 400);
-  point(540, 400);
- 
+  // Íris direita   
+  point(185, 569);
+  point(191, 569);
+  point(191, 576);
+  point(185, 576);
+
+  // Boca    
+  point(169, 585);
+  point(181, 585);
+  point(181, 588);
+  point(169, 588);
+
+  // Torso   
+  point(155, 595);
+  point(195, 595);
+  point(195, 645);
+  point(155, 645);
+
+  // Braço esquerdo  
+  point(141, 595);
+  point(155, 595);
+  point(155, 632);
+  point(141, 632);
+
+  // Braço direito  
+  point(195, 595);
+  point(209, 595);
+  point(209, 632);
+  point(195, 632);
+
+  // Manga esquerda    
+  point(141, 595);
+  point(155, 595);
+  point(155, 610);
+  point(141, 610);
+
+  // Manga direita   
+  point(195, 595);
+  point(209, 595);
+  point(209, 610);
+  point(195, 610);
+
+  // Pernas  
+  point(155, 645);
+  point(195, 645);
+  point(195, 685);
+  point(155, 685);
+
+  // Sapatos   
+  point(155, 685);
+  point(195, 685);
+  point(195, 700);
+  point(155, 700);
+
+  // Meio perna    
+  point(174, 660);
+  point(176, 660);
+  point(176, 700);
+  point(174, 700);
 }
 
 void linhas(){
+  // AJEITAR AS LINHAS COM AS COORDENADAS CORRIGIDAS DEPOIS
   // Cabeça
   line(320, 120, 540, 120);
   line(540, 120, 540, 320);
@@ -174,133 +172,135 @@ void cores() {
   // Cabeça
   fill(209, 167, 126);
   beginShape();
-  vertex(120, 45);
-  vertex(202.5, 45);
-  vertex(202.5, 80);
-  vertex(120, 80);
+  vertex(155, 555);
+  vertex(195, 555);
+  vertex(195, 595);
+  vertex(155, 595);
   endShape(CLOSE);
 
   // Cabelo
   fill(108, 60, 12);
   beginShape();
-  vertex(120, 30);
-  vertex(202.5, 30);
-  vertex(202.5, 45);
-  vertex(120, 45);
+  vertex(155, 555);
+  vertex(195, 555);
+  vertex(195, 565);
+  vertex(155, 565);
   endShape(CLOSE);
 
   // Olho esquerdo
   fill(256, 256, 256);
   beginShape();
-  vertex(140, 55);
-  vertex(151.25, 55);
-  vertex(151.25, 62.5);
-  vertex(140, 62.5);
+  vertex(159, 569);
+  vertex(165, 569);
+  vertex(165, 576);
+  vertex(159, 576);
   endShape(CLOSE);
 
   // Íris esquerda
   fill(25, 25, 112);
   beginShape();
-  vertex(151.25, 55);
-  vertex(162.5, 55);
-  vertex(162.5, 62.5);
-  vertex(151.25, 62.5);
+  vertex(165, 569);
+  vertex(171, 569);
+  vertex(171, 576);
+  vertex(165, 576);
   endShape(CLOSE);
 
   // Olho direito
   fill(256, 256, 256);
   beginShape();
-  vertex(157.5, 55);
-  vertex(168.75, 55);
-  vertex(168.75, 62.5);
-  vertex(157.5, 62.5);
+  vertex(179, 569);
+  vertex(185, 569);
+  vertex(185, 576);
+  vertex(179, 576);
   endShape(CLOSE);
 
   // Íris direita
   fill(25, 25, 112);
   beginShape();
-  vertex(168.75, 55);
-  vertex(180, 55);
-  vertex(180, 62.5);
-  vertex(168.75, 62.5);
+  vertex(185, 569);
+  vertex(191, 569);
+  vertex(191, 576);
+  vertex(185, 576);
   endShape(CLOSE);
 
   // Boca
   fill(0, 0, 0);
   beginShape();
-  vertex(146.25, 67.5);
-  vertex(156.875, 67.5);
-  vertex(156.875, 71.25);
-  vertex(146.25, 71.25);
+  vertex(169, 585);
+  vertex(181, 585);
+  vertex(181, 588);
+  vertex(169, 588);
   endShape(CLOSE);
 
   // Torso
   fill(0, 97, 120);
   beginShape();
-  vertex(120, 80);
-  vertex(202.5, 80);
-  vertex(202.5, 145);
-  vertex(120, 145);
+  vertex(155, 595);
+  vertex(195, 595);
+  vertex(195, 645);
+  vertex(155, 645);
   endShape(CLOSE);
 
   // Braço esquerdo
   fill(209, 167, 126);
   beginShape();
-  vertex(100, 80);
-  vertex(120, 80);
-  vertex(120, 145);
-  vertex(100, 145);
+  vertex(141, 595);
+  vertex(155, 595);
+  vertex(155, 632);
+  vertex(141, 632);
   endShape(CLOSE);
 
   // Braço direito
   fill(209, 167, 126);
   beginShape();
-  vertex(202.5, 80);
-  vertex(223.125, 80);
-  vertex(223.125, 145);
-  vertex(202.5, 145);
+  vertex(195, 595);
+  vertex(209, 595);
+  vertex(209, 632);
+  vertex(195, 632);
   endShape(CLOSE);
 
-  // manga esquerda
+  // Manga esquerda
   fill(0, 97, 120); // Cor verde para o torso
   beginShape();
-  vertex(100, 80);
-  vertex(120, 80);
-  vertex(120, 100);
-  vertex(100, 100);
+  vertex(141, 595);
+  vertex(155, 595);
+  vertex(155, 610);
+  vertex(141, 610);
   endShape(CLOSE);
 
-  // manga direita
+  // Manga direita
   fill(0, 97, 120);
   beginShape();
-  vertex(202.5, 80);
-  vertex(223.125, 80);
-  vertex(223.125, 100);
-  vertex(202.5, 100);
+  vertex(195, 595);
+  vertex(209, 595);
+  vertex(209, 610);
+  vertex(195, 610);
   endShape(CLOSE);
 
   // Pernas
   fill(0, 0, 139); // Cor azul para a perna
   beginShape();
-  vertex(120, 145);
-  vertex(202.5, 145);
-  vertex(202.5, 200);
-  vertex(120, 200);
+  vertex(155, 645);
+  vertex(195, 645);
+  vertex(195, 685);
+  vertex(155, 685);
   endShape(CLOSE);
 
   // Sapatos
   fill(128, 128, 128);
   beginShape();
-  vertex(120, 200);
-  vertex(202.5, 200);
-  vertex(202.5, 212.5);
-  vertex(120, 212.5);
+  vertex(155, 685);
+  vertex(195, 685);
+  vertex(195, 700);
+  vertex(155, 700);
   endShape(CLOSE);
 
   // Meio perna
   fill(0, 0, 0);
   beginShape();
-  vertex(146.25, 172.5);
-  vertex(146.25, 212.5);
+  vertex(174, 660);
+  vertex(176, 660);
+  vertex(176, 700);
+  vertex(174, 700);
   endShape(CLOSE);
 }

@@ -5,15 +5,11 @@ void setup() {
 }
 
 void draw() {
-  background(220);  // Define o fundo para cinza claro
+  //background(173, 216, 230);   // Define o fundo como azul claro
+  home home = new home(); // fazer o mesmo com outras classes depois
   
-  /*pontos_gerais();
-  linhas_gerais();
-  cor_gerais();
-  bandeira();
-  pontos();
-  linhas();
-  cores();*/
+  home.lines();
+  home.points();
   cores();
   mar();
   terra();
