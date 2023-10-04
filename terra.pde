@@ -1,6 +1,4 @@
-
-class terra {
-  
+class terra{
 void terra(){
   fill(0,128,0); // Define a cor verde, acho eu
   beginShape();
@@ -23,6 +21,5 @@ void terra(){
   line(0,700,0,900);
   line(0,900,450,900);
 
-}
-
+  }
 }

@@ -1,24 +1,13 @@
-/*
+class boneco{
 boolean movimentoDireita = true; // Variável para controlar o movimento do boneco
 float bonecoX = 320; // Posição horizontal inicial do boneco
 
-void setup() {
-  size(800, 800);
-  new BonecoThread().start(); // Inicia a thread do boneco
-}
-
-void draw() {
-  background(255); // Fundo branco
-  desenharBoneco(bonecoX);
-}
 
 void desenharBoneco(float x) {
-  // Seu código de desenho do boneco com point() e line()
-  // Certifique-se de usar as coordenadas x para posicionar o boneco horizontalmente
-  // Exemplo:
+  
   pontos(x);
   linhas(x);
-  //cores();
+  
 }
 
 void pontos(float x) {
@@ -138,26 +127,5 @@ line(x + 176, 700,x +  174, 700);
 line(x + 174, 700,x +  174, 660);
 
 }
-class BonecoThread extends Thread {
-  public void run() {
-    while (true) {
-      // Mova o boneco para a direita ou esquerda
-      if (movimentoDireita) {
-        bonecoX += 1;
-      } else {
-        bonecoX -= 1;
-      }
-      
-      // Inverta a direção quando atingir as bordas
-      if (bonecoX >= width - 100) {
-        movimentoDireita = false;
-      } else if (bonecoX <= 0) {
-        movimentoDireita = true;
-      }
-      
-      // Aguarde um tempo antes de atualizar novamente
-      delay(10); // Controle de velocidade
-    }
-  }
-}
-*/
+   
+    

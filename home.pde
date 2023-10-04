@@ -20,6 +20,7 @@ point(145,400);
 point(145,430);
 point(200,400);
 point(200,430);
+
 }
 void lines(){
 strokeWeight(5);
